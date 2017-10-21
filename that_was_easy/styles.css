@@ -1,0 +1,18 @@
+html {
+}
+
+.button {
+    padding: 10%;
+    color: white;
+    font-size: 100px;
+    margin: 10%;
+    width: 100px;
+    height: 100px;
+    font-family: Ariel;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ff0000;
+    border-radius: 50%;
+    background-color: red;
+    box-shadow: 100px 100px 100px gray;
+}

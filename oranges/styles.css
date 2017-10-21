@@ -1,0 +1,33 @@
+html {
+    max-width: 100%;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c4/Orange-Fruit-Pieces.jpg");
+}
+    
+.bigwords {
+    text-align-last: center;
+    font-family: Ariel;
+    
+}
+
+.picture {
+    margin-left: -175;
+    position: absolute;
+    width: 100%;
+    z-index: -1 !important;
+}
+
+.words {
+    width: 50%;
+}
+
+.poemTitle {
+    font-size: 75px;
+}
+
+.author {
+    font-size: 15px;
+}
+
+.poem {
+    font-size: 20px;
+}
