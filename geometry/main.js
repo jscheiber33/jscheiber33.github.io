@@ -20,11 +20,28 @@ function setup() {
 // }
 
 function draw() {
+    var isShifted = false;
+    var circleRadius = circleDiameter/2;
+    
+    if(isShifted) {
+        x = circleRadius;
+    }
+    else{
+        x = 0;
+    }
+    
     for(y = 0; y < height; y++){
-        for(x = 0; x < width; x++){
+        if(isShifted) {
+            x = circleRadius;
+        }
+        else{
+            x = 0;
+        }
+        for(x; x < width; x++){
             ellipse(x, y, circleDiameter, circleDiameter);
             x = x + circleDiameter;
         }
-    y = y + circleDiameter;
+        y = y + circleRadius;
+        isShifted = !isShifted;
     }
 }
