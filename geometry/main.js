@@ -22,6 +22,8 @@ function setup() {
 function draw() {
     var isShifted = false;
     var circleRadius = circleDiameter/2;
+    var x;
+    var y = height;
     
     if(isShifted) {
         x = circleRadius;
@@ -30,7 +32,7 @@ function draw() {
         x = 0;
     }
     
-    for(y = 0; y < height; y++){
+    for(y; y > 0; y++){
         if(isShifted) {
             x = circleRadius;
         }
@@ -41,7 +43,7 @@ function draw() {
             ellipse(x, y, circleDiameter, circleDiameter);
             x = x + circleDiameter;
         }
-        y = y + circleRadius;
+        y = y - circleRadius;
         isShifted = !isShifted;
     }
 }
