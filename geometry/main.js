@@ -1,23 +1,18 @@
 var NUM_CIRCLES = 12;
 var circleDiameter;
 
+// Initial Triangle Variables
+    x1 = 0;
+    x2 = 20;
+    x3 = 40;
+    y1 = 0;
+    y2 = 30;
+    y3 = 0;
 
 function setup() {
     createCanvas(480, 600);
     circleDiameter = width/NUM_CIRCLES;
 }
-
-// function draw() {
-//   ellipse(0, height/2, circleDiameter, circleDiameter);
-//   ellipse(circleDiameter, height/2, circleDiameter, circleDiameter);
-//   ellipse(2*circleDiameter, height/2, circleDiameter, circleDiameter);
-//   ellipse(3*circleDiameter, height/2, circleDiameter, circleDiameter);
-//   ellipse(4*circleDiameter, height/2, circleDiameter, circleDiameter);
-//   ellipse(5*circleDiameter, height/2, circleDiameter, circleDiameter);
-//   ellipse(6*circleDiameter, height/2, circleDiameter, circleDiameter);
-//   ellipse(7*circleDiameter, height/2, circleDiameter, circleDiameter);
-//   ellipse(8*circleDiameter, height/2, circleDiameter, circleDiameter);
-// }
 
 function draw() {
     var isShifted = false;
