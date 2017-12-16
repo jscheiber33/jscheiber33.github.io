@@ -1,0 +1,13 @@
+.title {
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: cursive;
+}
+
+html {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 2px gray;
+}
