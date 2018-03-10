@@ -1,6 +1,9 @@
 var player;
 var counter = 0;
 
+var width = 256;
+var height = 512;
+
 var playerImage;
 var backgroundImage;
 
@@ -22,7 +25,7 @@ var isGameOver;
 
 function preload() {
     backgroundImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/aKQOg3G.png");
-    playerImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/N5uCbDu.png");
+    playerImage = loadImage("img/12.png");
     enemyImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/OdL0XPt.png");
     enemy2Image = loadImage("https://surrogate.hackedu.us/i.imgur.com/OdL0XPt.png");
     enemy3Image = loadImage("https://surrogate.hackedu.us/i.imgur.com/OdL0XPt.png");
@@ -30,13 +33,13 @@ function preload() {
 
 function setup() {
     isGameOver = false;
-    createCanvas(256, 512);
+    createCanvas(width, height);
     
     enemy1StartPosition = random(.2, .8);
     enemy2StartPosition = random(.2, .8);
     enemy3StartPosition = random(.2, .8);
     
-    player = createSprite(width/2, height-25, 0, 0); // (x postition, y position, player width?, player height?)
+    player = createSprite(width/2, height - player.height, 0, 0); // (x postition, y position, player width?, player height?)
     player.addImage(playerImage);
     
     enemy = createSprite(width * enemy1StartPosition, -(enemyImage.height), 0, 0);
